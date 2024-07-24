@@ -1,0 +1,41 @@
+Q1- there are just one expected output :
+hey from message1 
+
+Q2-there are just one expected output :
+hey from message 1
+hey from message 2
+
+
+Q3- There are two possible expected outputs because only getMessage2 depends on getMessage3, so the container could save getMessage1 and getMessage3 in either order before resolving getMessage2 : 
+First output: 
+hey from message 1
+hey from message 3
+hey from message 2
+
+Second output : 
+hey from message 3
+hey from message 1
+hey from message 2
+
+
+
+
+Q4 - There are two possible expected outputs based on whether getMessage1 or getMessage3 is read first : 
+First : If he read message 1 first he will be print the main Controller after ... . 
+hey from message 1
+hey from main Controller
+hey from message 3
+hey from message 2
+
+Second : if message 3 read first , will be print message 2 after that ... . 
+hey from message 3
+hey from message 2
+hey from message 1
+hey from main Controller
+
+
+Q5- there are just one expected output becouse we add parameter to message 1 so, getmessage1 wite to expect parameter . This is the expected output : 
+hey from message 3
+hey from message 2
+hey from main Controller
+hey from message 1
